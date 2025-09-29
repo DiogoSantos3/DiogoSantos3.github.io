@@ -30,9 +30,9 @@ body{
   font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;
   color:var(--text);
   background:
-    radial-gradient(1200px 800px at 120% -10%, rgba(96,165,250,.12), transparent 60%),
-    radial-gradient(900px 600px at -10% 10%, rgba(34,211,238,.10), transparent 55%),
-    linear-gradient(180deg, #0b1224 0%, #0a1020 100%);
+          radial-gradient(1200px 800px at 120% -10%, rgba(96,165,250,.12), transparent 60%),
+          radial-gradient(900px 600px at -10% 10%, rgba(34,211,238,.10), transparent 55%),
+          linear-gradient(180deg, #0b1224 0%, #0a1020 100%);
   background-color:var(--bg);
   line-height:1.6;
 }
@@ -73,8 +73,8 @@ button:focus-visible{ outline:none; box-shadow:var(--ring); border-radius:10px; 
 .hero{
   padding:86px 0 40px;
   background:
-    radial-gradient(800px 400px at 10% -10%, rgba(96,165,250,.18), transparent 70%),
-    radial-gradient(700px 400px at 90% -20%, rgba(34,211,238,.14), transparent 70%);
+          radial-gradient(800px 400px at 10% -10%, rgba(96,165,250,.18), transparent 70%),
+          radial-gradient(700px 400px at 90% -20%, rgba(34,211,238,.14), transparent 70%);
 }
 .hero-inner{
   display:grid; gap:10px;
@@ -194,7 +194,7 @@ button:focus-visible{ outline:none; box-shadow:var(--ring); border-radius:10px; 
 .lightbox-close:hover{ background:rgba(148,163,184,.28); }
 
 /* =========================
-   Contacto
+   Contacto (pílula simples antiga)
 ========================= */
 .contact{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
 .email-pill{
@@ -207,6 +207,64 @@ button:focus-visible{ outline:none; box-shadow:var(--ring); border-radius:10px; 
 .email-pill::before{
   content:"✉";
   filter:grayscale(1);
+}
+
+/* =========================
+   NOVO — Secção de Contactos (sem formulário)
+========================= */
+.contact-section{
+  padding:96px 0 64px;
+  position:relative;
+  text-align:center;
+}
+.contact-title{
+  margin:0 0 8px;
+  font-size:clamp(28px,3.8vw,40px);
+  color:var(--title);
+  text-shadow:0 0 24px rgba(96,165,250,.45), 0 0 8px rgba(34,211,238,.35);
+}
+.contact-subtitle{
+  margin:0 auto 28px;
+  color:var(--muted);
+  max-width:58ch;
+}
+.contact-panel{
+  width:100%;
+  max-width:760px;
+  margin:0 auto;
+  background:linear-gradient(180deg, rgba(19,29,54,.9), rgba(12,20,39,.9));
+  border:1px solid rgba(148,163,184,.14);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow);
+  padding:24px;
+}
+.contact-cards{
+  display:grid;
+  gap:14px;
+}
+.contact-card{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 16px;
+  border-radius:14px;
+  background:rgba(148,163,184,.06);
+  border:1px solid rgba(148,163,184,.18);
+  transition:transform .18s ease, background .25s ease, border-color .25s ease;
+}
+.contact-card:hover{
+  transform:translateY(-2px);
+  background:rgba(96,165,250,.10);
+  border-color:rgba(96,165,250,.35);
+}
+.contact-card svg{
+  width:22px; height:22px; opacity:.9; flex:0 0 auto;
+}
+.contact-card strong{
+  color:var(--title); display:block; letter-spacing:.2px;
+}
+.contact-card small{
+  color:var(--muted); display:block; margin-top:2px;
 }
 
 /* =========================
@@ -238,6 +296,37 @@ button:focus-visible{ outline:none; box-shadow:var(--ring); border-radius:10px; 
 ::selection{ background:rgba(96,165,250,.35); color:#0b1020; }
 .nav a[aria-current="page"]{
   background:rgba(96,165,250,.16); color:var(--title);
+}
+/* ===== Skills alinhadas com textos ===== */
+.skills-band {
+  width: 100%;
+  padding: 0; /* remove o extra */
+}
+
+.skills-band-inner {
+  background: linear-gradient(180deg, rgba(19,29,54,.9), rgba(12,20,39,.9));
+  border: 1px solid rgba(148,163,184,.14);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  row-gap: 16px;
+}
+
+.skills-tags span {
+  display: inline-block;
+  font-size: .95rem;
+  line-height: 1;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: rgba(148,163,184,.08);
+  color: #cbd5e1;
+  border: 1px solid rgba(148,163,184,.18);
 }
 
 /* Suave animação ao revelar */
