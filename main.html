@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portefólio — Miguel Pinto</title>
+    <meta name="description"
+        content="Portefólio do Miguel Pinto — Eng. Informática @ ISEL. Kotlin, PostgreSQL, Python, Pygame, Concurrency." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css?v=1" />
+    <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="#top">Miguel Pinto</a>
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#skills">Skills</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1>Olá, sou o Miguel 👋</h1>
+                    <p class="subtitle">
+                        Finalista de Engenharia Informática @ ISEL. Gosto de resolver problemas complexos
+                        e de gerir projetos. </p>
+                    <div class="cta">
+                        <a class="btn" href="#projetos">Ver projetos</a>
+                        <a class="btn ghost" href="./ressource/Curriculo.pdf" target="_blank" rel="noopener">Download
+                            CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <p>
+                    Sou estudante de Engenharia Informática e de Computadores no ISEL (3.º ano), com interesse por áreas
+                    como lógica, programação, estruturas de dados e desenvolvimento de software. Estudei no Liceu
+                    Francês em Lisboa, experiência que me deu rigor académico, mentalidade aberta e fluência em várias
+                    línguas.
+                    Fora da academia, sou escuteiro e voluntário, onde aprendi valores de liderança, resiliência e
+                    trabalho em equipa. Sou curioso, gosto de aprender de forma autónoma e procuro constantemente
+                    desafios que me façam crescer técnica e pessoalmente. </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Linguagens</h2>
+
+                <div class="grid split">
+                    <!-- Coluna 1: Linguagens -->
+                    <article class="card">
+                        <div class="tags tight">
+                            <span>Kotlin</span><span>Java</span><span>Python</span><span>JavaScript</span>
+                            <span>HTML</span><span>CSS</span><span>SQL</span><span>PostgreSQL</span>
+                            <span>Node.js</span><span>Spring MVC</span><span>JPA (Java Persistence API)</span>
+                            <span>API REST</span><span>OpenAPI/Swagger</span>
+                            <span>Android Studio</span><span>JUnit</span><span>Gradle</span>
+                            <span>Git</span><span>GitHub</span><span>Docker</span><span>Linux</span>
+                            <span>VirtualBox</span><span>VHDL</span><span>C</span><span>Assembly</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2>Projetos em destaque</h2>
+
+                <div class="grid projects">
+                    <!-- Projeto 1 -->
+                    <article class="card project"> <!-- ADICIONA: lightbox -->
+                        <a class="thumb lightbox" href="#" data-full="./ressource/Padel_Court_Manager.png"
+                            data-caption="Padel Court Manager — Back/Front End" rel="noopener">
+                            <img src="./ressource/Padel_Court_Manager.png" alt="Preview Padel Manager" loading="lazy"
+                                decoding="async" />
+                        </a>
+                        <div class="card-body">
+                            <h3>Padel Court Manager</h3>
+                            <p>Layered architecture (responsive frontend + REST API + relational DB) supporting CRUD for
+                                clubs/courts/users, free-slot checks and booking records.</p>
+                            <div class="tech">
+                                <span>Kotlin</span><span>JavaScript</span><span>Html</span><span>Css</span><span>PostgreSQL</span><span>Express</span><span>Http4K</span>
+                            </div>
+                            <div class="links">
+                                <a class="btn small" href="https://github.com/MiguelMPinto/Padel_Court_Manager"
+                                    target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="card project"> <!-- ADICIONA: lightbox -->
+                        <a class="thumb lightbox" href="#" data-full="./ressource/Foccacia.jpg"
+                            data-caption="Foccacia — Web" rel="noopener">
+                            <img src="./ressource/Foccacia.jpg" alt="Preview Foccacia (Web)" loading="lazy"
+                                decoding="async" />
+                        </a>
+                        <div class="card-body">
+                            <h3>Focaccia</h3>
+                            <p>Full-stack project: a backend service orchestrating calls to a football API and a web
+                                interface to search and view results.</p>
+                            <div class="tech"><span>JavaScript</span><span>Html</span><span>Css</span><span>Rest
+                                    Api</span><span>Elastic Search</span><span>Node.js</span></div>
+                            <div class="links">
+                                <a class="btn small" href="https://github.com/MiguelMPinto/Foccacia" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3 -->
+                    <article class="card project"> <!-- ADICIONA: lightbox -->
+                        <a class="thumb lightbox" href="#" data-full="./ressource/Checkers.jpg"
+                            data-caption="Checkers — Kotlin/Compose" rel="noopener">
+                            <img src="./ressource/Checkers.jpg" alt="Preview Checkers (Web)" loading="lazy"
+                                decoding="async" />
+                        </a>
+                        <div class="card-body">
+                            <h3>Checkers</h3>
+                            <p>Recreation of <em>Chuckie Egg</em> in Kotlin using the Canvas API. Pure,
+                                <strong>immutable</strong> state drives the game loop (input, update, render) for easier
+                                testing and maintenance.
+                            </p>
+                            <div class="tech"><span>Kotlin</span><span>Compose</span></div>
+                            <div class="links">
+                                <a class="btn small" href="https://github.com/MiguelMPinto/Checkers" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 4 -->
+                    <article class="card project"> <!-- ADICIONA: lightbox -->
+                        <a class="thumb lightbox" href="#" data-full="./ressource/SpaceInvaders.jpg"
+                            data-caption="Space Invaders — Kotlin/Canvas" rel="noopener">
+                            <img src="./ressource/SpaceInvaders.jpg" alt="Preview SpaceInvaders (Kotlin)" loading="lazy"
+                                decoding="async" />
+                        </a>
+                        <div class="card-body">
+                            <h3>Space Invaders</h3>
+                            <p>Hardware/Software split: game implemented in <strong>Kotlin</strong>, with
+                                <strong>VHDL</strong> on an <strong>FPGA</strong> handling keypad input and display
+                                output.
+                            </p>
+                            <div class="tech"><span>Kotlin</span><span>VHDL</span></div>
+                            <div class="links">
+                                <a class="btn small" href="https://github.com/MiguelMPinto/SpaceInvaders"
+                                    target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 5 -->
+                    <article class="card project"> <!-- ADICIONA: lightbox -->
+                        <a class="thumb lightbox" href="#" data-full="./ressource/Chuckie_egg.jpg"
+                            data-caption="Space Invaders — Kotlin/VHDL" rel="noopener">
+                            <img src="./ressource/Chuckie_egg.jpg" alt="Preview Chucki_Egg (Kotlin)" loading="lazy"
+                                decoding="async" />
+                        </a>
+                        <div class="card-body">
+                            <h3>Chuckie Egg</h3>
+                            <p>Recreation of <em>Chuckie Egg</em> in Kotlin using the Canvas API. Pure,
+                                <strong>immutable</strong> state drives the game loop (input, update, render) for easier
+                                testing and maintenance.
+                            </p>
+                            <div class="tech"><span>Kotlin</span></div>
+                            <div class="links">
+                                <a class="btn small" href="https://github.com/MiguelMPinto/Chucki_Egg" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Aberto a estágios/alternance e projetos.</p>
+
+                <div class="contact">
+                    <!-- Email visível -->
+                    <span class="email-pill" id="emailText">pinto.miguel@outlook.pt</span>
+
+                    <a class="btn ghost" href="https://www.linkedin.com/in/miguel-morais-pinto/" target="_blank"
+                        rel="noopener">LinkedIn</a>
+                    <a class="btn ghost" href="https://github.com/MiguelMPinto" target="_blank"
+                        rel="noopener">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© <span id="year"></span> Miguel Pinto — hospedado em GitHub Pages</small>
+        </div>
+    </footer>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox-modal" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Fechar">✕</button>
+        <div>
+            <img id="lightbox-img" class="lightbox-img" alt="" />
+            <div id="lightbox-cap" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        // abre
+        const modal = document.getElementById('lightbox');
+        const imgEl = document.getElementById('lightbox-img');
+        const capEl = document.getElementById('lightbox-cap');
+
+        document.querySelectorAll('.thumb.lightbox').forEach(el => {
+            el.addEventListener('click', e => {
+                e.preventDefault();
+                const full = el.dataset.full || el.querySelector('img')?.src;
+                const alt = el.dataset.alt || el.querySelector('img')?.alt || '';
+                const cap = el.dataset.caption || '';
+                imgEl.src = full;
+                imgEl.alt = alt;
+                capEl.textContent = cap;
+                modal.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // fecha (overlay, botão, Esc)
+        const close = () => {
+            modal.classList.remove('open');
+            imgEl.src = '';
+            document.body.style.overflow = '';
+        };
+        modal.addEventListener('click', e => { if (e.target === modal) close(); });
+        document.querySelector('.lightbox-close').addEventListener('click', close);
+        window.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    </script>
+
+    <script>
+        // Atualiza o ano automaticamente (sem dependências)
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
